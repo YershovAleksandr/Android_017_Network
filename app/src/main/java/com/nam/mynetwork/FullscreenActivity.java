@@ -17,6 +17,7 @@ import android.widget.Button;
 public class FullscreenActivity extends AppCompatActivity {
 
     private Button mButton;
+    private Button mButton1;
 
     /**
      * Whether or not the system UI should be auto-hidden after
@@ -120,6 +121,16 @@ public class FullscreenActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        mButton1 = findViewById(R.id.button1);
+        mButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FullscreenActivity.this, NetworkingSocketsActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
