@@ -27,6 +27,8 @@
         <activity android:name=".NetworkingAndroidHttpClientActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".NetworkingAndroidHttpClientJSONActivity" />
+        <activity android:name=".NetworkingAndroidHttpClientXMLActivity" />
+        <activity android:name=".MA" />
     </application>
 
 </manifest>

@@ -20,6 +20,7 @@ public class FullscreenActivity extends AppCompatActivity {
     private Button mButton1;
     private Button mButton2;
     private Button mButton3;
+    private Button mButton4;
 
     /**
      * Whether or not the system UI should be auto-hidden after
@@ -151,6 +152,14 @@ public class FullscreenActivity extends AppCompatActivity {
             }
         });
 
+        mButton4 = findViewById(R.id.button4);
+        mButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FullscreenActivity.this, MA.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
